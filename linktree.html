@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BatCave</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: url('Batman.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      background-color: #000;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.75);
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .title {
+      margin-top: 100px;
+      margin-bottom: 20px;
+      font-size: 2.5em;
+      text-shadow: 0 0 10px #f1c40f;
+      padding: 0 20px;
+    }
+
+    .texte {
+      margin: 0 20px 40px;
+      font-size: 1em;
+      line-height: 1.8em;
+      text-shadow: 0 0 5px #000;
+      max-width: 800px;
+    }
+
+    .texte b {
+      color: #f1c40f;
+    }
+
+    .texte i {
+      font-style: italic;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .link {
+      text-decoration: none;
+      color: #f5f5f5;
+      background-color: #111;
+      border: 2px solid #f1c40f;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 1.2em;
+      transition: all 0.3s ease;
+      width: 100%;
+    }
+
+    .link:hover {
+      background-color: #f1c40f;
+      color: #111;
+    }
+
+    @media (max-width: 600px) {
+      .title {
+        font-size: 2em;
+        margin-top: 60px;
+      }
+
+      .texte {
+        font-size: 0.9em;
+      }
+
+      .link {
+        font-size: 1em;
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="title">🔱Bienvenue🔱</div>
+    <div class="texte">
+      Ici c'est un <b>petit projet personnel</b> que je voulais faire.<br><br>
+      Créer <i>mon propre linktree</i>.<br><br>
+      Je voulais tout simplement afficher mon <b>TikTok</b> où des fois je poste du contenu en rapport avec la
+      <b>musculation</b>, mais je compte me diversifier à l'avenir.<br><br>
+      Ma playlist spotify pour le <b>sport</b> <br />
+      On peut également retrouver mon <b>YouTube</b> où je posterai des <i>vlogs de voyage</i>.<br><br>
+      Et enfin, mon <b>petit bébé</b> à moi, un autre projet personnel en un — <b>une pierre deux coups</b> — :<br>
+      <i>mon propre programme d'entraînement</i> que je respecte.<br><br>
+      Vous pouvez aller le consulter si vous en avez besoin, <b>ça me fait plaisir</b>, c'est <b>gratuit</b>.
+    </div>
+    <div class="links">
+      <a href="https://www.tiktok.com/@quentin_muscu?lang=fr" class="link" target="_blank">TikTok - Musculation</a>
+      <a href="https://www.youtube.com/@quentinlabourdette7052" class="link" target="_blank">YouTube - Vlogs Voyage</a>
+      <a href="code_programme_muscu.html" class="link" target="_blank">Programme musculation</a>
+      <a href="https://open.spotify.com/playlist/6j7rDxfSv3nzsF88rrLtWL?si=60RAJpsOSmWZ8rnD6Gx5TQ&pi=OEEv_wFwTIeku"
+        class="link" target="_blank">Playlist spotify sport🎵</a>
+    </div>
+  </div>
+</body>
+
+</html>
